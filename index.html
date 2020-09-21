@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B1W5L1_switch</title>
+</head>
+
+<body>
+    <script>
+        var x = prompt("Is de kaas geel?");
+
+        switch (x) {
+            case "Ja":
+                x = prompt("Zitten er gaten in?");
+                switch (x) {
+                    case "Ja":
+                        x = prompt("Is de kaaas bleachelijk duur?")
+                        switch (x) {
+                            case "Ja":
+                                alert("Emmenthaler");
+                            case "Nee":
+                                alert("Leerdammer");
+                        }
+                    case "Nee":
+                        x = prompt("Is de kaas hard als steen?");
+                        switch(x){
+                            case "Ja":
+                                alert("Pamigiano Reggiano");
+                            case "Nee": 
+                                alert("Goudsekaas");
+                        }
+                }   
+
+
+                break;
+            case "Nee":
+                x = prompt("Heeft de kaas blauwe schimmels?");
+                switch (x){
+                    case "Ja":
+                    x = prompt("Heeft de kaas een korst?");
+                    switch (x){
+                        case "Ja":
+                        alert("Blue de Rochbaron");
+                        case "Nee":
+                        alert("Foume d'Ambert");
+                    }
+                    case "Nee":
+                    x = prompt("Heeft de kaas een korst?");
+                        switch(x){
+                            case "Ja": 
+                                alert("Camenbert");
+                            case "Nee":
+                                alert("Mozzarella");
+                        }
+                }
+        }
+    </script>
+</body>
+
+</html>
